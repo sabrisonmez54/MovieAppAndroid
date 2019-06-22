@@ -71,9 +71,10 @@ public class MainActivity extends AppCompatActivity {
         mPreferences = android.support.v7.preference.PreferenceManager
                 .getDefaultSharedPreferences(this);
 
-        //getting viewModel
+        //getting viewModel of database
         mMovieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
 
+        //observer for the live data
         mMovieViewModel.getmAllMovies().observe(this, new Observer<List<MovieItem>>() {
             @Override
             public void onChanged(@Nullable final List<MovieItem> movies) {
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+//COMMENTED OUT AS THE DATA IS NOW INITIALIZED IN ROOM DATABASE
 //    //Initialize movie data from resource
 //    private void initializeData() {
 //        // Get the resources from the XML file.
