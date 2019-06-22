@@ -10,7 +10,6 @@ import java.util.List;
 @Dao
 public interface MovieDao
 {
-
     @Insert
     void insert(MovieItem movieItem);
 
@@ -19,5 +18,4 @@ public interface MovieDao
 
     @Query("SELECT * from movie_table")
     LiveData<List<MovieItem>> getAllMovies();
-
 }

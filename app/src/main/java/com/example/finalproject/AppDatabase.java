@@ -62,17 +62,17 @@ public abstract class AppDatabase extends RoomDatabase
         "Godzilla: King Of The Monsters",
         "Men In Black International"};
 
-        String[] movieInfo =  {"The grave course of events set in motion by Thanos that wiped out half the universe\n" +
-                "            and fractured the Avengers ranks compels the remaining Avengers to take one final stand",
-                "Following the events of Avengers: Endgame, Spider-Man must step up to take on new\n" +
-                        "threats in a world that has changed forever",
-                "In this third installment of the adrenaline-fueled action franchise, super-assassin\n" +
-                        "John Wick (Keanu Reeves) returns with a $14 million price tag on his head and an army of\n" +
-                        "bounty-hunting killers on his trail.",
-                "A face off against a battery of god-sized monsters, including the mighty Godzilla,\n" +
+        String[] movieInfo =  {"The grave course of events set in motion by Thanos that wiped out half the universe " +
+                "and fractured the Avengers ranks compels the remaining Avengers to take one final stand",
+                "Following the events of Avengers: Endgame, Spider-Man must step up to take on new" +
+                        " threats in a world that has changed forever.",
+                "In this third installment of the adrenaline-fueled action franchise, super-assassin" +
+                        " John Wick (Keanu Reeves) returns with a $14 million price tag on his head and an army of" +
+                        " bounty-hunting killers on his trail.",
+                "A face off against a battery of god-sized monsters, including the mighty Godzilla, " +
                         "who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah",
-                "The Men In Black tackle their biggest, most global threat to date:\n" +
-                        "a mole in the Men in Black organization."};
+                "The Men In Black tackle their biggest, most global threat to date:" +
+                        " a mole in the Men in Black organization."};
 
         Integer[] movieImageResources = {R.drawable.img_avengers,
                 R.drawable.img_spiderman,R.drawable.img_johnwick,R.drawable.img_godzilla,R.drawable.img_meninblack};
@@ -83,8 +83,8 @@ public abstract class AppDatabase extends RoomDatabase
                 "Michael Dougherty",
                 "F. Gary Gray"};
         String[] movieCast =  {"Robert Downey Jr.\n" +
-                " \nChris Evans\n" +
-                " \nMark Ruffalo\n" +
+                "\nChris Evans\n" +
+                "\nMark Ruffalo\n" +
                 "\nChris Hemsworth\n" +
                 "\nScarlett Johansson\n" +
                 "\nJeremy Renner\n" +
