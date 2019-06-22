@@ -1,16 +1,41 @@
 package com.example.finalproject;
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
+
+@Entity(tableName = "movie_table")
 class MovieItem {
 
     // Member variables representing the title and information about the sport.
+    @PrimaryKey
+    @NonNull
+    @ColumnInfo(name = "title")
     private String title;
+
+    @ColumnInfo(name = "info")
     private String info;
+
+    @ColumnInfo(name = "director")
     private String director;
+
+    @ColumnInfo(name = "details")
     private String details;
+
+    @ColumnInfo(name = "cast")
     private String cast;
+
+    @ColumnInfo(name = "run_time")
     private String runTime;
+
+    @ColumnInfo(name = "cast_link")
     private String castLink;
+
+    @ColumnInfo(name = "ticket_link")
     private String ticketLink;
+
+    @ColumnInfo(name = "title_link")
     private final int imageResource;
 
     public MovieItem(String title, String info, int imageResource,

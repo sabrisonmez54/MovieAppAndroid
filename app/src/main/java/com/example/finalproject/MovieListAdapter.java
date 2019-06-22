@@ -19,19 +19,23 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.ViewHolder> {
 
     // Member variables.
-    private ArrayList<MovieItem> mMovieArray;
+    private List<MovieItem> mMovieArray;
     private Context mContext;
 
-    MovieListAdapter(Context context, ArrayList<MovieItem> movieData) {
+    MovieListAdapter(Context context, List<MovieItem> movieData) {
         this.mMovieArray = movieData;
         this.mContext = context;
     }
-
+    void setMovies(List<MovieItem> movies){
+        mMovieArray = movies;
+        notifyDataSetChanged();
+    }
 
     @Override
     public MovieListAdapter.ViewHolder onCreateViewHolder(

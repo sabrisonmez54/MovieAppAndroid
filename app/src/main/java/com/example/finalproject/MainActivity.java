@@ -1,5 +1,7 @@
 package com.example.finalproject;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
@@ -18,13 +20,17 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     // Member variables.
     private RecyclerView mRecyclerView;
-    private ArrayList<MovieItem> mMovieArray;
+    private List<MovieItem> mMovieArray;
     private MovieListAdapter mAdapter;
+
+    //Database
+    private MovieViewModel mMovieViewModel;
 
     //FOR SHARED PREFERENCES
     private SharedPreferences mPreferences;
@@ -53,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
         // Get the data.
-        initializeData();
+        //initializeData();
 
         //FOR SHARED PREFERENCES
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
@@ -64,6 +70,18 @@ public class MainActivity extends AppCompatActivity {
 
         mPreferences = android.support.v7.preference.PreferenceManager
                 .getDefaultSharedPreferences(this);
+
+        //getting viewModel
+        mMovieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
+
+        mMovieViewModel.getmAllMovies().observe(this, new Observer<List<MovieItem>>() {
+            @Override
+            public void onChanged(@Nullable final List<MovieItem> movies) {
+                // Update the cached copy of the words in the adapter.
+                mAdapter.setMovies(movies);
+            }
+        });
+
     }
 
     @Override
@@ -88,44 +106,44 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Initialize movie data from resource
-    private void initializeData() {
-        // Get the resources from the XML file.
-        String[] movieArray = getResources()
-                .getStringArray(R.array.array_movieTitles);
-        String[] movieInfo = getResources()
-                .getStringArray(R.array.array_movieInfo);
-        TypedArray movieImageResources =
-                getResources().obtainTypedArray(R.array.array_moviePhotos);
-        String[] movieDirector = getResources()
-                .getStringArray(R.array.array_movieDirector);
-        String[] movieDetails = getResources()
-                .getStringArray(R.array.array_movieDetails);
-        String[] movieCast = getResources()
-                .getStringArray(R.array.array_movieCast);
-        String[] movieRunTime = getResources()
-                .getStringArray(R.array.array_movieRunTimes);
-        String[] movieCastLink = getResources()
-                .getStringArray(R.array.array_castLinks);
-        String[] movieTicketLink = getResources()
-                .getStringArray(R.array.array_ticketLink);
-
-        // Clear the existing data to avoid duplication
-        mMovieArray.clear();
-
-        // Create the ArrayList of Movie objects with titles and information about each sport.
-        for(int i = 0; i < movieArray.length; i++){
-            mMovieArray.add(new MovieItem(movieArray[i],movieInfo[i],
-                    movieImageResources.getResourceId(i,0),
-                    movieDirector[i], movieDetails[i], movieCast[i], movieRunTime[i],
-                    movieCastLink[i], movieTicketLink[i]));
-        }
-
-        movieImageResources.recycle();
-
-        // Notify the adapter of the change.
-        mAdapter.notifyDataSetChanged();
-    }
+//    //Initialize movie data from resource
+//    private void initializeData() {
+//        // Get the resources from the XML file.
+//        String[] movieArray = getResources()
+//                .getStringArray(R.array.array_movieTitles);
+//        String[] movieInfo = getResources()
+//                .getStringArray(R.array.array_movieInfo);
+//        TypedArray movieImageResources =
+//                getResources().obtainTypedArray(R.array.array_moviePhotos);
+//        String[] movieDirector = getResources()
+//                .getStringArray(R.array.array_movieDirector);
+//        String[] movieDetails = getResources()
+//                .getStringArray(R.array.array_movieDetails);
+//        String[] movieCast = getResources()
+//                .getStringArray(R.array.array_movieCast);
+//        String[] movieRunTime = getResources()
+//                .getStringArray(R.array.array_movieRunTimes);
+//        String[] movieCastLink = getResources()
+//                .getStringArray(R.array.array_castLinks);
+//        String[] movieTicketLink = getResources()
+//                .getStringArray(R.array.array_ticketLink);
+//
+//        // Clear the existing data to avoid duplication
+//        mMovieArray.clear();
+//
+//        // Create the ArrayList of Movie objects with titles and information about each sport.
+//        for(int i = 0; i < movieArray.length; i++){
+//            mMovieArray.add(new MovieItem(movieArray[i],movieInfo[i],
+//                    movieImageResources.getResourceId(i,0),
+//                    movieDirector[i], movieDetails[i], movieCast[i], movieRunTime[i],
+//                    movieCastLink[i], movieTicketLink[i]));
+//        }
+//
+//        movieImageResources.recycle();
+//
+//        // Notify the adapter of the change.
+//        mAdapter.notifyDataSetChanged();
+//    }
 
     //SHARED PREFERENCES
     @Override
