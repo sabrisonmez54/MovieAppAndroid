@@ -30,7 +30,6 @@ public class MovieRepository
 
     private static class insertAsyncTask extends AsyncTask<MovieItem, Void, Void>
     {
-
         private MovieDao mAsyncTaskDao;
 
         insertAsyncTask(MovieDao dao) {
@@ -44,5 +43,44 @@ public class MovieRepository
             return null;
         }
     }
+    // delete all movies
+    private static class deleteAllMoviesAsyncTask extends AsyncTask<Void, Void, Void>
+    {
+        private MovieDao mAsyncTaskDao;
 
+        deleteAllMoviesAsyncTask(MovieDao dao)
+        {
+            mAsyncTaskDao = dao;
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids)
+        {
+            mAsyncTaskDao.deleteAll();
+            return null;
+        }
+    }
+
+    public void deleteAll()
+    {
+        new deleteAllMoviesAsyncTask(mMovieDao).execute();
+    }
+
+    //delete single movie
+    private static class deleteMovieAsyncTask extends AsyncTask<MovieItem, Void, Void> {
+        private MovieDao mAsyncTaskDao;
+
+        deleteMovieAsyncTask(MovieDao dao) {
+            mAsyncTaskDao = dao;
+        }
+
+        @Override
+        protected Void doInBackground(final MovieItem... params) {
+            mAsyncTaskDao.deleteMovie(params[0]);
+            return null;
+        }
+    }
+    public void deleteMovie(MovieItem movieItem)  {
+        new deleteMovieAsyncTask(mMovieDao).execute(movieItem);
+    }
 }

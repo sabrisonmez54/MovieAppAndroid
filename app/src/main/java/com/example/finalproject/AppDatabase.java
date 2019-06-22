@@ -77,37 +77,42 @@ public abstract class AppDatabase extends RoomDatabase
         Integer[] movieImageResources = {R.drawable.img_avengers,
                 R.drawable.img_spiderman,R.drawable.img_johnwick,R.drawable.img_godzilla,R.drawable.img_meninblack};
 
-        String[] movieDirector =  {"Anthony Russo, Joe Russo",
+        String[] movieDirector = {"Anthony Russo, Joe Russo",
                 "Jon Watts",
                 "Chad Stahelski",
                 "Michael Dougherty",
                 "F. Gary Gray"};
-        String[] movieCast =  {"Robert Downey Jr.\n" +
+        String[] movieCast = {
+                "Robert Downey Jr.\n" +
                 "\nChris Evans\n" +
                 "\nMark Ruffalo\n" +
                 "\nChris Hemsworth\n" +
                 "\nScarlett Johansson\n" +
                 "\nJeremy Renner\n" +
                 "\\nSee LINK below for full cast!",
+
                 "Tom Holland\n" +
                         "\nSamuel L. Jackson\n" +
                         "\nJake Gyllenhaal\n" +
                         "\nJon Favreau\n" +
                         "\nZendaya\n" +
                         "\nSee LINK below for full cast!",
+
                 " Keanu Reeves\n" +
                         "\nHalle Berry\n" +
                         "\nnIan McShane\n" +
                         "\nLaurence Fishburne\n" +
                         "\nMark Dacascos\n" +
                         "\nSee LINK below for full cast!",
+
                 "Kyle Chandler\n" +
                         "\nVera Farmiga\n" +
                         "\nMillie Bobby Brown\n" +
                         "\nKen Watanabe\n" +
                         "\nZiyi Zhang\n" +
                         "\nSee LINK below for full cast!",
-                " Chris Hemsworth\n" +
+
+                "Chris Hemsworth\n" +
                         "\nTessa Thompson\n" +
                         "\nLiam Neeson\n" +
                         "\nRebecca Ferguson\n" +
@@ -150,7 +155,6 @@ public abstract class AppDatabase extends RoomDatabase
             // Create the ArrayList of Movie objects with titles and information about each sport.
             for(int i = 0; i < movieArray.length; i++)
             {
-
                 MovieItem movieItem = new MovieItem(movieArray[i],movieInfo[i],
                         movieImageResources[i],
                         movieDirector[i], movieDetails[i], movieCast[i], movieRunTime[i],

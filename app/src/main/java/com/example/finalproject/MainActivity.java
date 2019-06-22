@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Database
     private MovieViewModel mMovieViewModel;
+    private MovieRepository mRepository;
 
     //FOR SHARED PREFERENCES
     private SharedPreferences mPreferences;
@@ -162,5 +163,11 @@ public class MainActivity extends AppCompatActivity {
         preferencesEditor.clear();
         preferencesEditor.apply();
     }
+
+    //delete all movies
+    public void deleteAll() {mRepository.deleteAll();}
+
+    //delete single movie
+    public void deleteMovie(MovieItem movieItem) {mRepository.deleteMovie(movieItem);}
 
 }
