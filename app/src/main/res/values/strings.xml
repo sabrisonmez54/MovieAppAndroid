@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="action_settings">Settings</string>
+
+    <array name="array_moviePhotos">
+        <item>@drawable/img_avengers</item>
+        <item>@drawable/img_spidey</item>
+        <item>@drawable/img_johnwick</item>
+        <item>@drawable/img_godzilla</item>
+        <item>@drawable/img_meninblack</item>
+    </array>
+
+    <string-array name="array_movieTitles">
+        <item>Avengers Endgame</item>
+        <item>Spider-Man: Far From Home</item>
+        <item>John Wick: Chapter 3 - Parabellum</item>
+        <item>Godzilla: King Of The Monsters</item>
+        <item>Men In Black International</item>
+    </string-array>
+
+    <array name="array_movieDirector">
+        <item>Anthony Russo, Joe Russo</item>
+        <item>Jon Watts</item>
+        <item>Chad Stahelski</item>
+        <item>Michael Dougherty</item>
+        <item>F. Gary Gray</item>
+    </array>
+
+    <string-array name="array_movieInfo">
+        <item>The grave course of events set in motion by Thanos that wiped out half the universe
+            and fractured the Avengers ranks compels the remaining Avengers to take one final stand.</item>
+        <item>Following the events of Avengers: Endgame, Spider-Man must step up to take on new
+            threats in a world that has changed forever.</item>
+        <item>In this third installment of the adrenaline-fueled action franchise, super-assassin
+            John Wick (Keanu Reeves) returns with a $14 million price tag on his head and an army of
+            bounty-hunting killers on his trail.</item>
+        <item>A face off against a battery of god-sized monsters, including the mighty Godzilla,
+            who collides with Mothra, Rodan, and his ultimate nemesis, the three-headed King Ghidorah.</item>
+        <item>The Men In Black tackle their biggest, most global threat to date:
+            a mole in the Men in Black organization.</item>
+    </string-array>
+
+    <array name="array_movieDetails">
+        <item>avengers long description</item>
+
+        <item>spiderman long description</item>
+
+        <item>john wick long description</item>
+
+        <item>godzilla long description</item>
+
+        <item>men in black long description</item>
+
+    </array>
+
+    <array name="array_movieCast">
+        <item>
+            Robert Downey Jr.
+            \nChris Evans
+            \nMark Ruffalo
+            \nChris Hemsworth
+            \nScarlett Johansson
+            \nJeremy Renner
+            \nSee LINK below for full cast!
+        </item>
+
+        <item>
+            Tom Holland
+            \nSamuel L. Jackson
+            \nJake Gyllenhaal
+            \nJon Favreau
+            \nZendaya
+            \nSee LINK below for full cast!
+        </item>
+
+        <item>
+            Keanu Reeves
+            \nHalle Berry
+            \nIan McShane
+            \Laurence Fishburne
+            \nMark Dacascos
+            \nSee LINK below for full cast!
+        </item>
+
+        <item>
+            Kyle Chandler
+            \nVera Farmiga
+            \nMillie Bobby Brown
+            \nKen Watanabe
+            \nZiyi Zhang
+            \nSee LINK below for full cast!
+        </item>
+
+        <item>
+            Chris Hemsworth
+            \nTessa Thompson
+            \nLiam Neeson
+            \nRebecca Ferguson
+            \nRafe Spall
+            \nSee LINK below for full cast!
+        </item>
+    </array>
+
+    <array name="array_movieRunTimes">
+        <item>3 HR 2 MIN</item>
+        <item>2 HR 10 MIN</item>
+        <item>2 HR 10 MIN</item>
+        <item>2 HR 12 MIN</item>
+        <item>1 HR 55 MIN</item>
+    </array>
+
+    <array name="array_castLinks">
+        <item>https://www.imdb.com/title/tt4154796/fullcredits</item>
+        <item>https://www.imdb.com/title/tt6320628/fullcredits/</item>
+        <item>https://www.imdb.com/title/tt6146586/fullcredits/</item>
+        <item>https://www.imdb.com/title/tt3741700/fullcredits/</item>
+        <item>https://www.imdb.com/title/tt2283336/fullcredits/</item>
+    </array>
+
+    <array name="array_ticketLink">
+        <item>https://www.amctheatres.com/movies/avengers-endgame-45840/showtimes</item>
+        <item>https://www.amctheatres.com/movies/spider-man-far-from-home-52667/showtimes</item>
+        <item>https://www.amctheatres.com/movies/john-wick-chapter-3-parabellum-54963/showtimes
+        </item>
+        <item>https://www.amctheatres.com/movies/godzilla-king-of-the-monsters-46113</item>
+        <item>https://www.amctheatres.com/movies/men-in-black-international-55120</item>
+    </array>
+
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
