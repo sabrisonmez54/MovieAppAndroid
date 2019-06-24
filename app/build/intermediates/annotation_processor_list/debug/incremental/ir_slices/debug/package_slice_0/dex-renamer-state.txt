@@ -1,4 +1,0 @@
-#Sat Jun 22 00:27:33 EDT 2019
-base.0=/Users/mayeng/Downloads/NINA/android-fundamentals-apps-v2-master/FinalProject/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex

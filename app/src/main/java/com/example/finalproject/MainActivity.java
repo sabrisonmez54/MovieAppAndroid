@@ -22,8 +22,8 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity
+{
     // Member variables.
     private RecyclerView mRecyclerView;
     private List<MovieItem> mMovieArray;
@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
     private final String sharedPrefFile = "com.example.android.FinalProjectSharedPrefs";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -76,18 +77,20 @@ public class MainActivity extends AppCompatActivity {
         mMovieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
 
         //observer for the live data
-        mMovieViewModel.getmAllMovies().observe(this, new Observer<List<MovieItem>>() {
+        mMovieViewModel.getmAllMovies().observe(this, new Observer<List<MovieItem>>()
+        {
             @Override
-            public void onChanged(@Nullable final List<MovieItem> movies) {
+            public void onChanged(@Nullable final List<MovieItem> movies)
+            {
                 // Update the cached copy of the words in the adapter.
                 mAdapter.setMovies(movies);
             }
         });
-
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
@@ -164,10 +167,12 @@ public class MainActivity extends AppCompatActivity {
         preferencesEditor.apply();
     }
 
+    //get all movies
+    public void getAllMovie(){ mRepository.getAllMovies();}
+
     //delete all movies
     public void deleteAll() {mRepository.deleteAll();}
 
     //delete single movie
     public void deleteMovie(MovieItem movieItem) {mRepository.deleteMovie(movieItem);}
-
 }

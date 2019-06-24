@@ -9,8 +9,10 @@ import android.support.annotation.NonNull;
 class MovieItem {
 
     // Member variables representing the title and information about the sport.
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
+    private int id;
+
     @ColumnInfo(name = "title")
     private String title;
 
@@ -38,9 +40,10 @@ class MovieItem {
     @ColumnInfo(name = "title_link")
     private final int imageResource;
 
-    public MovieItem(String title, String info, int imageResource,
+    public MovieItem(int id, String title, String info, int imageResource,
                     String director, String details,
                     String cast, String runTime, String castLink, String ticketLink) {
+        this.id = id;
         this.title = title;
         this.info = info;
         this.imageResource = imageResource;
@@ -51,6 +54,8 @@ class MovieItem {
         this.castLink = castLink;
         this.ticketLink = ticketLink;
     }
+
+    int getId(){return id;}
 
     int getImageResource()
     {

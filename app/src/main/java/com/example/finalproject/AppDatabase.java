@@ -12,7 +12,7 @@ import android.support.annotation.NonNull;
 import java.util.List;
 
 
-@Database(entities = {MovieItem.class}, version = 1, exportSchema = false)
+@Database(entities = {MovieItem.class}, version = 2, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase
 {
     public abstract MovieDao movieDao();
@@ -89,7 +89,7 @@ public abstract class AppDatabase extends RoomDatabase
                 "\nChris Hemsworth\n" +
                 "\nScarlett Johansson\n" +
                 "\nJeremy Renner\n" +
-                "\\nSee LINK below for full cast!",
+                "\nSee LINK below for full cast!",
 
                 "Tom Holland\n" +
                         "\nSamuel L. Jackson\n" +
@@ -118,7 +118,7 @@ public abstract class AppDatabase extends RoomDatabase
                         "\nRebecca Ferguson\n" +
                         "\nRafe Spall\n" +
                         "\nSee LINK below for full cast!"};
-        String[] movieDetails =  {"Avengers Endgame",
+        String[] movieDetails =  {"Avengers Endgame long description",
                 "Spider-Man: Far From Home",
                 "John Wick: Chapter 3 - Parabellum",
                 "Godzilla: King Of The Monsters",
@@ -155,7 +155,7 @@ public abstract class AppDatabase extends RoomDatabase
             // Create the ArrayList of Movie objects with titles and information about each sport.
             for(int i = 0; i < movieArray.length; i++)
             {
-                MovieItem movieItem = new MovieItem(movieArray[i],movieInfo[i],
+                MovieItem movieItem = new MovieItem(i, movieArray[i],movieInfo[i],
                         movieImageResources[i],
                         movieDirector[i], movieDetails[i], movieCast[i], movieRunTime[i],
                         movieCastLink[i], movieTicketLink[i]);

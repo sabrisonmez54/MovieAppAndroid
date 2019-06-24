@@ -25,12 +25,12 @@ public class AppDatabase_Impl extends AppDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `movie_table` (`title` TEXT NOT NULL, `info` TEXT, `director` TEXT, `details` TEXT, `cast` TEXT, `run_time` TEXT, `cast_link` TEXT, `ticket_link` TEXT, `title_link` INTEGER NOT NULL, PRIMARY KEY(`title`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `movie_table` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `info` TEXT, `director` TEXT, `details` TEXT, `cast` TEXT, `run_time` TEXT, `cast_link` TEXT, `ticket_link` TEXT, `title_link` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"1d2a1761acefda22c324414d7522cc10\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"35cdb65334976229fc1785e3298b9e6b\")");
       }
 
       @Override
@@ -60,8 +60,9 @@ public class AppDatabase_Impl extends AppDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsMovieTable = new HashMap<String, TableInfo.Column>(9);
-        _columnsMovieTable.put("title", new TableInfo.Column("title", "TEXT", true, 1));
+        final HashMap<String, TableInfo.Column> _columnsMovieTable = new HashMap<String, TableInfo.Column>(10);
+        _columnsMovieTable.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
+        _columnsMovieTable.put("title", new TableInfo.Column("title", "TEXT", false, 0));
         _columnsMovieTable.put("info", new TableInfo.Column("info", "TEXT", false, 0));
         _columnsMovieTable.put("director", new TableInfo.Column("director", "TEXT", false, 0));
         _columnsMovieTable.put("details", new TableInfo.Column("details", "TEXT", false, 0));
@@ -80,7 +81,7 @@ public class AppDatabase_Impl extends AppDatabase {
                   + " Found:\n" + _existingMovieTable);
         }
       }
-    }, "1d2a1761acefda22c324414d7522cc10", "2a85e6b47406afc5cfb28af97d43713b");
+    }, "35cdb65334976229fc1785e3298b9e6b", "234b1e86726e8c13d617c7f1f3d21e7c");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

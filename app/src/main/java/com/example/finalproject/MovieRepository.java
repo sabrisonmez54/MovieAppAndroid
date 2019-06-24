@@ -67,7 +67,8 @@ public class MovieRepository
     }
 
     //delete single movie
-    private static class deleteMovieAsyncTask extends AsyncTask<MovieItem, Void, Void> {
+    private static class deleteMovieAsyncTask extends AsyncTask<MovieItem, Void, Void>
+    {
         private MovieDao mAsyncTaskDao;
 
         deleteMovieAsyncTask(MovieDao dao) {
@@ -75,12 +76,15 @@ public class MovieRepository
         }
 
         @Override
-        protected Void doInBackground(final MovieItem... params) {
+        protected Void doInBackground(final MovieItem... params)
+        {
             mAsyncTaskDao.deleteMovie(params[0]);
             return null;
         }
     }
-    public void deleteMovie(MovieItem movieItem)  {
+
+    public void deleteMovie(MovieItem movieItem)
+    {
         new deleteMovieAsyncTask(mMovieDao).execute(movieItem);
     }
 }
