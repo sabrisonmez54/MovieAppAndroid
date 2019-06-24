@@ -11,9 +11,11 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -86,6 +88,9 @@ public class MainActivity extends AppCompatActivity
                 mAdapter.setMovies(movies);
             }
         });
+
+        // Shared preferences - night mode
+            enableNightMode();
     }
 
     @Override
@@ -165,6 +170,20 @@ public class MainActivity extends AppCompatActivity
         SharedPreferences.Editor preferencesEditor = mPreferences.edit();
         preferencesEditor.clear();
         preferencesEditor.apply();
+    }
+
+    // Elton: based on shared preferences, enable night mode style.
+    public void enableNightMode() {
+        Boolean nightModePref = mPreferences.getBoolean(SettingsActivity.NIGHT_MODE_PREFERENCE, false);
+        int nightMode = AppCompatDelegate.getDefaultNightMode();
+        Log.d("MainActivity", String.valueOf(nightMode));
+        if (nightMode != AppCompatDelegate.MODE_NIGHT_YES && nightModePref) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            Log.d("MainActivity", "Night mode enabled!");
+        } else if (nightMode == AppCompatDelegate.MODE_NIGHT_YES && !nightModePref) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            Log.d("MainActivity", "Night mode disabled!");
+        }
     }
 
     //get all movies

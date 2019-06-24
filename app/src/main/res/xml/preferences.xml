@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="night_mode"
+        android:title="@string/night_mode"
+        android:summary="Enable night mode for browsing at night" />
+
 </PreferenceScreen>
