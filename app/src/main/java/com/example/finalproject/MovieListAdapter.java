@@ -65,6 +65,12 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
         return mMovieArray.size();
     }
 
+    // To enable the adapter to detect the swiped movie.
+    public MovieItem getMovieAtPosition(int position) {
+        return mMovieArray.get(position);
+    }
+
+
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         // Member Variables for the TextViews

@@ -23,4 +23,8 @@ public class MovieViewModel extends AndroidViewModel
         LiveData<List<MovieItem>> getmAllMovies() { return mAllMovies; }
 
         public void insert(MovieItem movieItem) { mRepository.insert(movieItem); }
+
+        public void delete(MovieItem movieItem) {
+            mRepository.deleteMovie(movieItem);
+        }
 }

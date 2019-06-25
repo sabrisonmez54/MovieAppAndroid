@@ -1087,6 +1087,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_add
 drawable ic_arrow_down_24dp
 drawable ic_buy
 drawable ic_launcher_background
@@ -1095,6 +1096,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable img_avengers
+drawable img_coming_soon
 drawable img_godzilla
 drawable img_johnwick
 drawable img_meninblack
@@ -1346,6 +1348,13 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id wishlist
+id wishlist_caption
+id wishlist_info
+id wishlist_info_label
+id wishlist_save
+id wishlist_title
+id wishlist_title_label
 id withText
 id wrap
 id wrap_content
@@ -1397,6 +1406,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_movie_item
 layout activity_detail
 layout activity_main
 layout content_detail
@@ -1520,6 +1530,12 @@ string summary_collapsed_preference_list
 string title_activity_detail
 string v7_preference_off
 string v7_preference_on
+string wishlist_caption
+string wishlist_info
+string wishlist_info_label
+string wishlist_save
+string wishlist_title
+string wishlist_title_label
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

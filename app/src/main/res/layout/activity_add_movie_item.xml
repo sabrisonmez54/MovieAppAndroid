@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wishlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMovieItem">
+
+    <TextView
+        android:id="@+id/wishlist_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/wishlist_caption"
+        android:textAppearance="@style/MovieDetailTitle"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wishlist_title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/wishlist_title_label"
+        android:textAppearance="@style/MovieDetailsText"
+        app:layout_constraintEnd_toStartOf="@+id/wishlist_title"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist_caption" />
+
+    <TextView
+        android:id="@+id/wishlist_info_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/wishlist_info_label"
+        android:textAppearance="@style/MovieDetailsText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist_title_label" />
+
+    <EditText
+        android:id="@+id/wishlist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="@string/wishlist_title"
+        android:inputType="text|textCapCharacters"
+        app:layout_constraintBottom_toBottomOf="@+id/wishlist_title_label"
+        app:layout_constraintStart_toEndOf="@+id/wishlist_info_label"
+        app:layout_constraintTop_toTopOf="@+id/wishlist_title_label" />
+
+    <EditText
+        android:id="@+id/wishlist_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/wishlist_info"
+        android:inputType="text|textCapCharacters"
+        app:layout_constraintBottom_toBottomOf="@+id/wishlist_info_label"
+        app:layout_constraintStart_toStartOf="@+id/wishlist_title"
+        app:layout_constraintTop_toTopOf="@+id/wishlist_info_label" />
+
+    <Button
+        android:id="@+id/wishlist_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/wishlist_save"
+        android:onClick="addMovie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+<!--
+@ColumnInfo(name = "title")
+    private String title;
+
+    @ColumnInfo(name = "info")
+    private String info;
+
+    @ColumnInfo(name = "director")
+    private String director;
+
+    @ColumnInfo(name = "details")
+    private String details;
+
+    @ColumnInfo(name = "cast")
+    private String cast;
+
+    @ColumnInfo(name = "run_time")
+    private String runTime;
+
+    @ColumnInfo(name = "cast_link")
+    private String castLink;
+
+    @ColumnInfo(name = "ticket_link")
+    private String ticketLink;
+
+    @ColumnInfo(name = "title_link")
+    private final int imageResource; -->

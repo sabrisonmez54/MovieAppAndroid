@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
 MERGED from [com.android.support:design:28.0.0] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/8a0e57916384bce46ceaa5b0f40fb331/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:preference-v7:28.0.0] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/5d174b8a240957f46e868de1f29b1575/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/b41d1e800f69bead0888ddd02692828d/AndroidManifest.xml:17:1-22:12
@@ -42,25 +42,25 @@ MERGED from [com.android.support:documentfile:28.0.0] /Users/eltoncheung/.gradle
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/0d457d0e0beb8812f1f850ded2f9b5c1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/4048852a8bb174aff3fd09292ec60095/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/e1ec3eba96fdc25db6fd24c1ddbf9cc0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
 		INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:1-42:12
 		INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:5:5-43:19
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:5:5-40:19
 MERGED from [com.android.support:design:28.0.0] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/8a0e57916384bce46ceaa5b0f40fb331/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/8a0e57916384bce46ceaa5b0f40fb331/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/7e551688f004ca124c230029696b65a6/AndroidManifest.xml:9:5-20
@@ -85,22 +85,26 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/eltoncheung/
 		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.finalproject.AddMovieItem
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:12:9-59
+	android:name
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:12:19-47
 activity#com.example.finalproject.SettingsActivity
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:13:9-19:20
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:13:9-20:20
 	android:parentActivityName
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:15:13-55
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:16:13-55
 	android:label
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:14:13-37
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:13:19-51
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:14:13-45
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:16:13-18:48
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:17:13-19:49
 	android:value
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:18:17-46
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:19:17-46
 	android:name
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:17:17-63
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:18:17-63
 activity#com.example.finalproject.DetailActivity
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:21:9-30:20
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:21:9-29:20
 	android:parentActivityName
 		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:24:13-55
 	android:label
@@ -110,23 +114,23 @@ ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/An
 	android:name
 		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:22:13-43
 activity#com.example.finalproject.MainActivity
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:32:9-41:20
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:30:9-39:20
 	android:label
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:34:13-38
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:32:13-38
 	android:theme
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:35:13-56
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:33:13-56
 	android:name
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:33:13-41
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:31:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:36:13-40:29
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:37:17-69
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:37:25-66
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:35:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:39:17-77
+ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:39:27-74
+		ADDED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml:37:27-74
 uses-sdk
 INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/eltoncheung/AndroidStudioProjects/FinalProject/app/src/main/AndroidManifest.xml

@@ -131,6 +131,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="night_mode">Night mode</string>
+    <string name="wishlist_info">Enter notes or any info</string>
+    <string name="wishlist_title">Enter the movie title</string>
+    <string name="wishlist_info_label">Notes/Info:</string>
+    <string name="wishlist_title_label">Title:</string>
+    <string name="wishlist_caption">Add a movie that you\'d like to see!</string>
+    <string name="wishlist_save">Add to the list</string>
 
 
 </resources>

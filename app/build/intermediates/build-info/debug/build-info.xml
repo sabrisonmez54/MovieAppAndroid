@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.4.1"
-    timestamp="1561436722957"
+    timestamp="1561496464838"
     token="8559180313018844063"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -23,13 +23,9 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
-
     <build
         build-mode="FULL"
-        timestamp="1561399141637"
+        timestamp="1561495629622"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -62,10 +58,10 @@
             location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -73,8 +69,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="FIELD_ADDED"
-        timestamp="1561436664883"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1561496429301"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -82,11 +78,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1561436722957"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-    </build>
+        timestamp="1561496464838"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
