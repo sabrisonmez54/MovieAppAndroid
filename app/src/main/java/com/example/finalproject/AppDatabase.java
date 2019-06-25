@@ -118,11 +118,26 @@ public abstract class AppDatabase extends RoomDatabase
                         "\nRebecca Ferguson\n" +
                         "\nRafe Spall\n" +
                         "\nSee LINK below for full cast!"};
-        String[] movieDetails =  {"Avengers Endgame long description",
-                "Spider-Man: Far From Home",
-                "John Wick: Chapter 3 - Parabellum",
-                "Godzilla: King Of The Monsters",
-                "Men In Black International"};
+        String[] movieDetails =  {"Adrift in space with no food or water, Tony Stark sends a message to " + "" +
+                "Pepper Potts as his oxygen supply starts to dwindle. " +
+                "Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must "
+                + "figure out a way to bring back their vanquished allies for an epic showdown with Thanos, " +
+                "the evil demigod who decimated the planet and the universe.",
+                "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats " +
+                        "in a world that has changed forever.",
+                "After gunning down a member of the High Table, the shadowy international assassin's guild, " +
+                        "legendary hit man John Wick finds himself stripped of the organization's protective services. " +
+                        "Now stuck with a $14 million bounty on his head, Wick must fight his way through the streets of " +
+                        "New York as he becomes the target of the world's most ruthless killers.",
+                "Members of the crypto-zoological agency Monarch face off against a battery of god-sized monsters, " +
+                        "including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, " +
+                        "the three-headed King Ghidorah. When these ancient super-species-thought to be mere myths-rise again, " +
+                        "they all vie for supremacy, leaving humanity's very existence hanging in the balance.",
+                "The Men in Black have expanded to cover the globe but so have the villains of the universe. " +
+                        "To keep everyone safe, decorated Agent H and determined rookie M join forces -- an unlikely pairing " +
+                        "that just might work. When aliens that can take the form of any human arrive on Earth, " +
+                        "H and M embark on a globe-trotting adventure to save the agency, and ultimately the world, " +
+                        "from their mischievous plans."};
         String[] movieRunTime =  {"3 HR 2 MIN",
                 "2 HR 10 MIN",
                 "2 HR 10 MIN",
