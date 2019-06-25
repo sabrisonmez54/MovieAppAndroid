@@ -20,6 +20,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +92,11 @@ public class MainActivity extends AppCompatActivity
         });
 
         // Shared preferences - night mode
-            enableNightMode();
+        enableNightMode();
+
+        // Shared preferences - nickname greeting
+        String nickname = mPreferences.getString(SettingsActivity.NICKNAME_PREFERENCE, "Moviegoer");
+        Toast.makeText(this, "Welcome back, " + nickname, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -179,10 +185,8 @@ public class MainActivity extends AppCompatActivity
         Log.d("MainActivity", String.valueOf(nightMode));
         if (nightMode != AppCompatDelegate.MODE_NIGHT_YES && nightModePref) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-            Log.d("MainActivity", "Night mode enabled!");
         } else if (nightMode == AppCompatDelegate.MODE_NIGHT_YES && !nightModePref) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            Log.d("MainActivity", "Night mode disabled!");
         }
     }
 

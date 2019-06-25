@@ -7,4 +7,18 @@
         android:title="@string/night_mode"
         android:summary="Enable night mode for browsing at night" />
 
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="large_description"
+        android:title="Large description text"
+        android:summary="Enable for larger description text" />
+
+    <EditTextPreference
+        android:defaultValue="Moviegoer"
+        android:key="name"
+        android:title="Nickname"
+        android:summary="Enter your nickname for a greeting when you open the app" />
+
+
+
 </PreferenceScreen>

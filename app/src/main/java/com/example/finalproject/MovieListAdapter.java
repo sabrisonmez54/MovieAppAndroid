@@ -3,11 +3,16 @@ package com.example.finalproject;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +32,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
     // Member variables.
     private List<MovieItem> mMovieArray;
     private Context mContext;
+    private SharedPreferences mPreferences;
 
     MovieListAdapter(Context context, List<MovieItem> movieData) {
         this.mMovieArray = movieData;
@@ -85,6 +91,23 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
             mMovieCastLinks = itemView.findViewById(R.id.movieCastLinksDetail);
 
             itemView.setOnClickListener(this);
+
+            // For shared preferences.
+            android.support.v7.preference.PreferenceManager
+                    .setDefaultValues(mContext, R.xml.preferences, false);
+            mPreferences = android.support.v7.preference.PreferenceManager.getDefaultSharedPreferences(mContext);
+
+            Boolean largeText = mPreferences.getBoolean(SettingsActivity.LARGE_TEXT_PREFERENCE, false);
+            if (largeText) {
+                mMovieTitle.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40);
+                mInfoText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
+            }
+
+            Boolean nightMode = mPreferences.getBoolean(SettingsActivity.NIGHT_MODE_PREFERENCE, false);
+            if (nightMode) {
+                mMovieTitle.setTextColor(mContext.getResources().getColor(R.color.white));
+            }
+
         }
 
         void bindTo(MovieItem currentMovie) {

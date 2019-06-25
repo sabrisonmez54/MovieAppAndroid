@@ -3,6 +3,7 @@ package com.example.finalproject;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
@@ -10,6 +11,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,6 +20,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 public class DetailActivity extends AppCompatActivity {
+
+    private SharedPreferences mPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +83,16 @@ public class DetailActivity extends AppCompatActivity {
         // Load the image using the Glide library and the Intent extra.
         Glide.with(this).load(getIntent().getIntExtra("image_resource",0))
                 .into(movieImage);
+
+        // For shared preferences.
+        android.support.v7.preference.PreferenceManager
+                .setDefaultValues(this, R.xml.preferences, false);
+        mPreferences = android.support.v7.preference.PreferenceManager.getDefaultSharedPreferences(this);
+
+        Boolean nightMode = mPreferences.getBoolean(SettingsActivity.NIGHT_MODE_PREFERENCE, false);
+        if (nightMode) {
+            movieTitle.setTextColor(getResources().getColor(R.color.white));
+        }
     }
 
     @Override
