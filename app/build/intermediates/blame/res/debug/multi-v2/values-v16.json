@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/Users/sabri/AndroidStudioProjects/MovieAppAndroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/b41d1e800f69bead0888ddd02692828d/res/values-v16/values-v16.xml",
+                    "source": "/Users/sabri/.gradle/caches/transforms-2/files-2.1/883718cf32a620a4b40311bf99469d9b/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/sabri/.gradle/caches/transforms-2/files-2.1/e66857ecd91a0d73435081e096c25eba/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/eltoncheung/.gradle/caches/transforms-2/files-2.1/e8e89f5ed1b67864b4cd5369b24833bf/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

@@ -1,4 +1,4 @@
-#Tue Jun 25 13:11:06 EDT 2019
-base.0=/Users/eltoncheung/AndroidStudioProjects/FinalProject/app/build/intermediates/transforms/dexMerger/debug/10
+#Mon Jul 08 22:26:49 CEST 2019
+base.0=/Users/sabri/AndroidStudioProjects/MovieAppAndroid/app/build/intermediates/transforms/dexMerger/debug/10
 path.0=classes.dex
 renamed.0=classes.dex
